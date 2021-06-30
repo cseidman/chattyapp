@@ -7,6 +7,8 @@ use tokio::sync::broadcast;
 async fn main() {
     let host = "localhost:8080" ;
 
+    println!("Chat server running ..");
+
     let listener = TcpListener::bind(host)
         .await
         .expect("Binding failed") ;
